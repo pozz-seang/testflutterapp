@@ -1,5 +1,0 @@
-workflows:
-  hello-world:
-    name: HI
-    scripts:
-        - echo "Hi thei test app flutter"
