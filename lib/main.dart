@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:clipboard/clipboard.dart';
-import 'package:url_launcher/url_launcher.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 
 void main() {
   runApp(Home());
@@ -22,13 +20,6 @@ class _HomeState extends State<Home> {
     ));
   }
 
-  launchURL(String url) async {
-    if (await canLaunch(url)) {
-      await launch(url, forceWebView: true);
-    } else {
-      throw 'Could not launch $url';
-    }
- }
 
   @override
   Widget build(BuildContext context) {
@@ -36,10 +27,12 @@ class _HomeState extends State<Home> {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Color(0xFF00FF95),
+
           title: Text(
             "PozzSeang.ONE",
             style: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
           ),
+
         ),
         body: Center(
           child: MaterialButton(
@@ -50,7 +43,6 @@ class _HomeState extends State<Home> {
               FlutterClipboard.copy('HI B SL O')
                   .then((value) => print('copied'));
               _show;
-              launchURL('pozzseang.one');
             },
           ),
           
