@@ -11,8 +11,8 @@ class NavBar extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: [
           UserAccountsDrawerHeader(
-            accountName: Text('Oflutter.com'),
-            accountEmail: Text('example@gmail.com'),
+            accountName: Text('SK PTest'),
+            accountEmail: Text('admin@SK.com'),
             currentAccountPicture: CircleAvatar(
               child: ClipOval(
                 child: Image.network(
