@@ -1,4 +1,4 @@
-package com.sk.PTest
+package com.SK.PTest
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sk.PTest">
+    package="com.SK.PTest">
    <application
         android:label="SK PTest"
         android:name="${applicationName}"
