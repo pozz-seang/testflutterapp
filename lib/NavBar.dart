@@ -15,20 +15,19 @@ class NavBar extends StatelessWidget {
             accountEmail: Text('admin@SK.com'),
             currentAccountPicture: CircleAvatar(
               child: ClipOval(
-                child: Image.network(
-                  'https://i.pinimg.com/736x/2f/d3/82/2fd3826e67f2a256b572b4241243cb05.jpg',
+                child: Image.asset(
+                  'assets/image/p.png', 
                   fit: BoxFit.cover,
                   width: 90,
-                  height: 90,
-                ),
+                  height: 90
+                )
               ),
             ),
             decoration: BoxDecoration(
-              color: Colors.blue,
+              color: Color.fromARGB(255, 255, 0, 0),
               image: DecorationImage(
                   fit: BoxFit.fill,
-                  image: NetworkImage(
-                      'https://timelinecovers.pro/facebook-cover/download/love-is-cute-facebook-cover.jpg')),
+                  image: AssetImage('assets/image/1.jpg')),
             ),
           ),
           ListTile(
